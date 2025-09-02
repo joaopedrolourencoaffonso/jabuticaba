@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
 import json
+from functions import *
 
 app = Flask(__name__)
 
@@ -9,7 +10,7 @@ def index():
 
 @app.route('/abrir-arquivo')
 def abrirArquivo():
-    file = open("temp.txt","r").read();
+    file = abrirArquivoSimples();
     
     return file;
 
