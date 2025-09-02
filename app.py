@@ -14,5 +14,9 @@ def abrirArquivo():
     
     return file;
 
+@app.route('/formularioSimples')
+def formularioSimples():
+    return render_template('formularioSimples.html');
+
 if __name__ == '__main__':
     app.run(debug=True)

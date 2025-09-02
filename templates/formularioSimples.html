@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabuticaba currículos</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Jabuticaba currículos</h1>
+
+    <div id="formulario">
+        <input type="text" id="nome1" name="fname" placeholder="Nome do candidato"><br><br>
+        <textarea id="candidato1" name="w3review" rows="4" cols="50" placeholder="Detalhes do candidato"></textarea>
+        <br><br><br>
+    </div>
+
+    <br>
+    <button onclick="addCandidato()">Adicionar Candidato</button>
+    <button onclick="enviarParaAnalise()">Enviar para Análise</button>
+
+    <script>
+        let numeroCandidatos = 1;
+
+        function addCandidato() {
+            numeroCandidatos += 1;
+            console.log("Número de candidatos: " + numeroCandidatos);
+            
+            // criando linha separadora
+            const hr1 = document.createElement("hr");
+            
+            // Get the container div
+            const container = document.getElementById("formulario");
+
+            // Create input element
+            const input = document.createElement("input");
+            input.type = "text";
+            input.name = "fname";
+            input.placeholder = "Nome do candidato";
+            input.id = "nome" + numeroCandidatos;
+
+            // Create line breaks
+            const br1 = document.createElement("br");
+            const br2 = document.createElement("br");
+
+            // Create textarea element
+            const textarea = document.createElement("textarea");
+            textarea.name = "w3review";
+            textarea.rows = 4;
+            textarea.cols = 50;
+            textarea.placeholder = "Detalhes do candidato";
+            textarea.id = "candidato" + numeroCandidatos;
+
+            // Create extra line breaks
+            const br3 = document.createElement("br");
+            const br4 = document.createElement("br");
+            const br5 = document.createElement("br");
+            const br6 = document.createElement("br");
+            const br7 = document.createElement("br");
+
+            // Botão para deletar candidatos
+            const deleteButton = document.createElement("button");
+            deleteButton.textContent = "Deletar Candidato " + numeroCandidatos;
+            deleteButton.onclick = function() {
+                container.removeChild(input);
+                container.removeChild(br1);
+                container.removeChild(br2);
+                container.removeChild(textarea);
+                container.removeChild(br3);
+                container.removeChild(br4);
+                container.removeChild(br5);
+                container.removeChild(deleteButton);
+                console.log("Candidato " + numeroCandidatos + " deleted.");
+            };
+
+            // Append elements to the container
+            container.appendChild(hr1);
+            container.appendChild(input);
+            container.appendChild(br1);
+            container.appendChild(br2);
+            container.appendChild(textarea);
+            container.appendChild(br3);
+            container.appendChild(br4);
+            container.appendChild(br5);
+            container.appendChild(deleteButton);
+            container.appendChild(br6);
+            container.appendChild(br7);
+        }
+
+        function enviarParaAnalise() {
+            // String vazia que será utilizada para concatenar as informações
+            let prompt = "";
+            let nomeCandidato;
+            let detalhesCandidato;
+
+            for (let i = 1; i <= numeroCandidatos; i++) {
+                try {
+                    temp = document.getElementById(`nome${i}`).value;
+                    detalhesCandidato = document.getElementById(`candidato${i}`).value;
+                } catch (error) {
+                    console.log("Candidato " + i + " não existe mais. Pulando...");
+                    continue; // Pula para a próxima iteração se o elemento não existir
+                }
+
+                if (temp === "" || detalhesCandidato === "") {
+                    alert("Por favor, preencha o nome e os detalhes do candidato " + i);
+                    return; // Sai da função se algum campo estiver vazio
+                }
+                prompt = prompt + `Candidato ${i}: ${temp}. Detalhes: ${detalhesCandidato}\n`;
+            }
+
+            console.log("prompt \n", prompt);
+        }
+        
+    </script>
+</body>
+</html>
