@@ -6,21 +6,48 @@
     <title>Jabuticaba currículos</title>
 
     <style>
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            overflow-y: auto;
+            padding-top: 20px;
+        }
 
+        .left {
+            left: 0;
+            background-color: #ffffcc;
+        }
+
+        .right {
+            right: 0;
+            background-color: #ccccff;
+        }
     </style>
 </head>
 <body>
-    <h1>Jabuticaba currículos</h1>
+    <div class="split left">
+        <h1>Jabuticaba currículos</h1>
+    
+        <div id="formulario">
+            <input type="text" id="nome1" name="fname" placeholder="Nome do candidato"><br><br>
+            <textarea id="candidato1" name="w3review" rows="4" cols="50" placeholder="Detalhes do candidato"></textarea>
+            <br><br><br>
+        </div>
+    
+        <br>
+        <button onclick="addCandidato()">Adicionar Candidato</button>
+        <button onclick="enviarParaAnalise()">Enviar para Análise</button>
 
-    <div id="formulario">
-        <input type="text" id="nome1" name="fname" placeholder="Nome do candidato"><br><br>
-        <textarea id="candidato1" name="w3review" rows="4" cols="50" placeholder="Detalhes do candidato"></textarea>
-        <br><br><br>
+        <br><br><br><br>
     </div>
 
-    <br>
-    <button onclick="addCandidato()">Adicionar Candidato</button>
-    <button onclick="enviarParaAnalise()">Enviar para Análise</button>
+    <div class="split right">
+        <p id="analise">A analise será exposta aqui</p>
+    </div>
 
     <script>
         let numeroCandidatos = 1;
