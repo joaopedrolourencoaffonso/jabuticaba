@@ -1,6 +1,9 @@
 from flask import Flask, render_template, jsonify, request
 import json
 from jabuticaba_functions import *
+from os import environ
+import requests
+import json
 
 app = Flask(__name__)
 
@@ -22,9 +25,14 @@ def formularioSimples():
 
 @app.route('/chamandoChatGPT', methods=['POST'])
 def chamandoChatGPT():
-    curriculos = request.form.get('curriculos', '')
+    curriculos = request.form.get('curriculos', '');
 
-    print(curriculos);
+    prompt = "Análise os currículos abaixo, crie um ranking de candidatos mais apropriados para uma vaga de cozinheiro. Explique sua lógica: " + "\n" + curriculos
+
+    result = send_openai_request(environ['OPENAI_API_KEY'], prompt, requests)
+
+    print("curriculos: ",curriculos);
+    print("result: ", result['output'][0]['content'][0]['text']);
     
     return "ok",200;
 
