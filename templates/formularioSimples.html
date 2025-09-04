@@ -136,11 +136,38 @@
                     alert("Por favor, preencha o nome e os detalhes do candidato " + i);
                     return; // Sai da função se algum campo estiver vazio
                 }
-                prompt = prompt + `Candidato ${i}: ${temp}. Detalhes: ${detalhesCandidato}\n`;
+                prompt = prompt + `| Candidato ${i}: ${temp}. \n Detalhes: ${detalhesCandidato}\n`;
             }
 
             console.log("prompt \n", prompt);
+
+            sendCurriculo(prompt);
         }
+
+        async function sendCurriculo(curriculos) {
+            console.log("Enviando curriculo para análise...");
+            const url = 'http://127.0.0.1:5000/chamandoChatGPT';
+            
+            // Send a POST request with the curriculo string
+            try {
+                const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded', // You can also use 'application/json' if needed
+                },
+                body: `curriculos=${encodeURIComponent(curriculos)}`, // Encode the curriculo data for safe transmission
+                });
+
+                if (response.ok) {
+                console.log('Data sent successfully');
+                } else {
+                console.error('Error:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Request failed', error);
+            }
+        }
+
         
     </script>
 </body>
