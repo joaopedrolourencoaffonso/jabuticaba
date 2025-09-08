@@ -13,11 +13,9 @@ app = Flask(__name__)
 def index():
     return render_template('index.html');
 
-@app.route('/abrir-arquivo')
-def abrirArquivo():
-    file = abrirArquivoSimples();
-    
-    return file;
+@app.route('/PaginaDeUpload', methods=['GET'])
+def PaginaDeUpload():
+    return render_template('PaginaDeUpload.html');
 
 @app.route('/formularioSimples')
 def formularioSimples():
