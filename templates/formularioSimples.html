@@ -157,7 +157,7 @@
             }
 
             console.log("prompt \n", prompt);
-            //sendCurriculo(prompt);
+            sendCurriculo(prompt);
         }
 
         async function sendCurriculo(curriculos) {
@@ -175,13 +175,23 @@
                 });
 
                 if (response.ok) {
-                console.log('Data sent successfully');
+                    console.log('Data sent successfully');
+                    const data = await response.text(); // Get the response body tex
+                    console.log("Response data:", data);
+                    document.getElementById("analise").innerText = data;
                 } else {
-                console.error('Error:', response.statusText);
+                    console.error('Error:', response.statusText);
                 }
             } catch (error) {
                 console.error('Request failed', error);
             }
+            
+            //console.log(response.text());
+
+            //return response.text().then(data => {
+            //    console.log("Response data:", data);
+            //    document.getElementById("analise").innerText = data;
+            //});
         }
 
         

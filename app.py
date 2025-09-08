@@ -34,7 +34,7 @@ def chamandoChatGPT():
     print("curriculos: ",curriculos);
     print("result: ", result['output'][0]['content'][0]['text']);
     
-    return "ok",200;
+    return result['output'][0]['content'][0]['text'], 200;
 
 if __name__ == '__main__':
     app.run(debug=True)

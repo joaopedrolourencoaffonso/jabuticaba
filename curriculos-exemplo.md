@@ -260,3 +260,24 @@ Nenhuma experiência profissional até o momento.
 
 Imediata, com disponibilidade para todos os turnos.
 ```
+
+
+Exemplo de resultado:
+
+```
+1. Candidata 3: Maria das Dores Silva
+2. Candidato 1: Marcelo Pinto de Almeida
+3. Candidato 4: Carlos Pereira da Silva
+4. Candidato 5: Lucas Oliveira Santos
+5. Candidato 2: João Souza
+
+Maria das Dores Silva ficou em primeiro lugar devido à sua vasta experiência na cozinha, mesmo que em cenário doméstico. A habilidade de preparação de refeições, experiência com diversos cardápios e cuidado com limpeza e organização são pontos que podem ser muito úteis em um restaurante fast-food.
+
+Marcelo ficou em segundo, pois mesmo que não possua experiência na cozinha, mostrou-se bastante motivado. Suas habilidades adquiridas como professor podem ser úteis em um restaurante fast-food, principalmente organização, trabalho sob pressão e rapidez em aprendizagem.
+
+Em terceiro lugar, colocamos Carlos Pereira da Silva pois, embora não tenha experiência direta em cozinha, demonstra compromisso com as tarefas propostas, dando ênfase à vontade de aprender.
+
+A quarta posição fica para Lucas Oliveira Santos, que apesar de não possuir experiência profissional, demonstra muita disposição para aprender e se dispõe a trabalhar em qualquer turno.
+
+Em último lugar, João Souza demonstra incerteza em relação à própria vontade de ser cozinheiro, e passa uma imagem de ser desorganizado e desinteressado, o que pode prejudicar o desempenho na vaga.
+```
