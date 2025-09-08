@@ -27,7 +27,7 @@ def formularioSimples():
 def chamandoChatGPT():
     curriculos = request.form.get('curriculos', '');
 
-    prompt = "Análise os currículos abaixo, crie um ranking de candidatos mais apropriados para uma vaga de cozinheiro. Explique sua lógica: " + "\n" + curriculos
+    prompt = "Análise os currículos abaixo, crie um ranking de candidatos mais apropriados a vaga descrita. Explique sua lógica: " + "\n" + curriculos
 
     result = send_openai_request(environ['OPENAI_API_KEY'], prompt, requests)
 

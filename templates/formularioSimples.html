@@ -31,6 +31,14 @@
 <body>
     <div class="split left">
         <h1>Jabuticaba currículos</h1>
+
+        <div id="DivDaVaga">
+            Descrição da vaga:<br>
+            <textarea id="vaga" name="vaga" rows="4" cols="50" placeholder="Descreva a vaga aqui..."></textarea>
+            <br><br><br>
+            <hr>
+            <h2>Candidatos</h2>
+        </div>
     
         <div id="formulario">
             <input type="text" id="nome1" name="fname" placeholder="Nome do candidato"><br><br>
@@ -123,6 +131,15 @@
             let nomeCandidato;
             let detalhesCandidato;
 
+            let temp = document.getElementById("vaga").value;
+            
+            if (temp === ""){
+                alert("Por favor, preencha a descrição da vaga.");
+                return; // Sai da função se o campo estiver vazio
+            } else {
+                prompt = "Descrição da vaga: " + temp + "\n";
+            }
+
             for (let i = 1; i <= numeroCandidatos; i++) {
                 try {
                     temp = document.getElementById(`nome${i}`).value;
@@ -140,8 +157,7 @@
             }
 
             console.log("prompt \n", prompt);
-
-            sendCurriculo(prompt);
+            //sendCurriculo(prompt);
         }
 
         async function sendCurriculo(curriculos) {

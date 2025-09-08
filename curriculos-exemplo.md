@@ -2,144 +2,261 @@ Aqui estão cinco exemplos de currículos fictícios de pessoas com pouca educa�
 
 ---
 
-**1. José da Silva**
-Idade: 26 anos
-Endereço: Rua das Flores, 432, Centro, SP
-Telefone: (11) 98765-4321
+Currículo 1
 
-**Objetivo:**
-Procurando uma vaga como cozinheiro para aplicar meus conhecimentos em culinária e aprender mais sobre o ramo de gastronomia.
+```
+### **CURRÍCULO — Marcelo Pinto de Almeida**
 
-**Experiência Profissional:**
-**Cozinheiro de Linha**
-Restaurante Popular do Centro | 2020-2023
-
-* Preparava refeições simples, como arroz, feijão, carnes e saladas.
-* Ajudava na organização da cozinha e limpeza do ambiente.
-* Realizava o preparo de pratos rápidos e seguia receitas simples.
-
-**Formação Acadêmica:**
-
-* Ensino Fundamental Completo.
-
-**Habilidades:**
-
-* Cozinha simples e tradicional.
-* Boa capacidade de seguir instruções e trabalhar em equipe.
-* Experiência com organização e limpeza na cozinha.
+**Telefone:** (11) 99999-9999
+**E-mail:** [marcelo.almeida@email.com](mailto:marcelo.almeida@email.com)
+**Endereço:** São Paulo – SP
 
 ---
 
-**2. Maria Aparecida dos Santos**
-Idade: 30 anos
-Endereço: Rua São João, 120, Bairro Jardim, RJ
-Telefone: (21) 99876-5432
+### **Objetivo**
 
-**Objetivo:**
-Trabalhar como cozinheira em um restaurante que valorize a culinária caseira e permita meu crescimento na área.
-
-**Experiência Profissional:**
-**Auxiliar de Cozinha**
-Lanchonete do Zé | 2018-2021
-
-* Auxiliava na preparação de salgados, frituras e sucos.
-* Realizava a limpeza da cozinha e dos utensílios.
-* Atendia clientes e preparava pratos rápidos para o balcão.
-
-**Formação Acadêmica:**
-
-* Ensino Fundamental Incompleto.
-
-**Habilidades:**
-
-* Preparo de salgados e pratos simples.
-* Facilidade para trabalhar em equipe.
-* Capacidade de aprender novas receitas e técnicas.
+Cozinheiro – Restaurante Fast-Food
 
 ---
 
-**3. João Carlos Pereira**
-Idade: 24 anos
-Endereço: Rua do Comércio, 155, Ponta Negra, AM
-Telefone: (92) 98123-4567
+### **Resumo Pessoal**
 
-**Objetivo:**
-Atuar como cozinheiro e desenvolver minhas habilidades culinárias para crescer profissionalmente.
-
-**Experiência Profissional:**
-**Cozinheiro de Fast Food**
-Hamburgueria do João | 2019-2022
-
-* Preparava hambúrgueres, frituras e acompanhamentos.
-* Cuidava da organização da cozinha e do estoque de ingredientes.
-* Ajudava no treinamento de novos colaboradores.
-
-**Formação Acadêmica:**
-
-* Ensino Fundamental Completo.
-
-**Habilidades:**
-
-* Prática em preparos rápidos e de alto volume.
-* Facilidade em manter a cozinha organizada e limpa.
-* Trabalhar sob pressão e cumprir prazos.
+Sou professor universitário com mais de 10 anos de experiência em sala de aula nas áreas de Humanas. Recentemente decidi procurar por um segundo emprego, buscando atividades mais práticas e dinâmicas. Tenho grande apreço por ambientes colaborativos, sou disciplinado, ágil na aprendizagem de novas funções e valorizo rotinas bem estruturadas. Embora não tenha experiência formal na cozinha, tenho disposição e seriedade para desempenhar bem a função proposta.
 
 ---
 
-**4. Fernanda de Souza Lima**
-Idade: 28 anos
-Endereço: Rua Boa Vista, 99, Bairro Alegre, PE
-Telefone: (81) 98765-4321
+### **Formação Acadêmica**
 
-**Objetivo:**
-Busco uma oportunidade para crescer como cozinheira e aprender mais sobre culinária profissional.
-
-**Experiência Profissional:**
-**Ajudante de Cozinha**
-Restaurante da Dona Maria | 2021-2024
-
-* Preparava e organizava os ingredientes para o preparo dos pratos.
-* Ajudava na limpeza da cozinha e utensílios.
-* Realizava a reposição de alimentos nos buffets e refeitórios.
-
-**Formação Acadêmica:**
-
-* Ensino Fundamental Incompleto.
-
-**Habilidades:**
-
-* Organização e limpeza de cozinha.
-* Capacidade de trabalhar bem em equipe.
-* Facilidade para aprender novas receitas e processos.
+* Mestrado em Filosofia – Universidade Federal de São Paulo (2015)
+* Licenciatura em História – Universidade de São Paulo (2010)
 
 ---
 
-**5. Carlos Alberto Silva**
-Idade: 35 anos
-Endereço: Rua das Palmeiras, 310, Bairro Novo, MG
-Telefone: (31) 99765-4321
+### **Experiência Profissional**
 
-**Objetivo:**
-Atuar como cozinheiro, com foco na preparação de pratos simples e tradicionais.
+**Professor Universitário – Faculdade FICTÍCIA**
+*2013 – 2023*
 
-**Experiência Profissional:**
-**Cozinheiro**
-Cantina do Carlos | 2017-2022
-
-* Preparava refeições para o almoço e jantar, com foco em pratos caseiros.
-* Responsável pelo controle de estoque de ingredientes.
-* Realizava a limpeza e organização da cozinha.
-
-**Formação Acadêmica:**
-
-* Ensino Fundamental Completo.
-
-**Habilidades:**
-
-* Cozinha tradicional, com foco em pratos de almoço e jantar.
-* Boa relação interpessoal e trabalho em equipe.
-* Comprometido com a higiene e organização do ambiente de trabalho.
+* Planejamento e condução de aulas
+* Trabalho em equipe com outros docentes
+* Gestão de sala, horários e atividades
 
 ---
 
-Esses currículos mostram que, mesmo sem formação acadêmica avançada, cada um possui experiência prática que pode ser valorizada em um processo seletivo para cargos de cozinheiro.
+### **Habilidades Relevantes**
+
+* Rápido aprendizado de rotinas
+* Organização e pontualidade
+* Capacidade de trabalhar sob pressão
+* Facilidade de adaptação a novos ambientes
+
+---
+
+### **Disponibilidade**
+
+Imediata. Disponível para todos os turnos.
+```
+
+
+Currículo 2
+
+```
+
+### **CURRÍCULO — João Souza**
+
+**Telefone:** (11) 99999-9999
+**E-mail:** [joao.souza@email.com](mailto:joao.souza@email.com)
+
+---
+
+### **Objetivo**
+
+Cozinheiro (talvez)
+
+---
+
+### **Resumo Pessoal**
+
+Bom, estou precisando de um trabalho e vi essa vaga de cozinheiro. Não tenho muita experiência na cozinha, mas sei o básico. Já fiz algumas refeições em casa, tipo macarrão e miojo, então acho que dá pra aprender o resto. Sou tranquilo, gosto de trabalhar de boa, e não sou de arrumar confusão. Se o trabalho for simples, vou conseguir levar de boa. Só preciso do emprego mesmo, porque tô sem fazer nada.
+
+---
+
+### **Formação Acadêmica**
+
+Ensino Médio Completo (não lembro onde)
+
+---
+
+### **Experiência Profissional**
+
+Nada relevante, mas já trabalhei em uns serviços temporários e tal. Não lembro exatamente onde, mas acho que trabalhei numa lanchonete uma vez, não durou muito, não.
+
+---
+
+### **Habilidades**
+
+* Sei fazer comida básica
+* Boa vontade, mesmo que não pareça
+* Sei usar micro-ondas
+* Posso aprender rápido se for o caso
+
+---
+
+### **Disponibilidade**
+
+Se for qualquer turno, pode ser. Só não gosto muito de acordar cedo, mas vou.
+```
+
+Currículo 3
+
+```
+---
+
+### **CURRÍCULO — Maria das Dores Silva**
+
+**Telefone:** (11) 99999-9999
+**E-mail:** [maria.silva@email.com](mailto:maria.silva@email.com)
+**Idade:** 68 anos
+**Endereço:** São Paulo – SP
+
+---
+
+### **Objetivo**
+
+Cozinheira – Restaurante Fast-Food
+
+---
+
+### **Resumo Pessoal**
+
+Tenho muitos anos de experiência como doméstica, e entre minhas tarefas estava sempre a preparação de refeições para a família. Sou muito cuidadosa com a higiene, o preparo e a organização na cozinha. Busco um trabalho para complementar minha renda, em um ambiente tranquilo e que me permita continuar ativa. Embora nunca tenha trabalhado diretamente em restaurante, estou disposta a aprender e sei que minha experiência de anos em casa me dá uma boa base para essa função.
+
+---
+
+### **Experiência Profissional**
+
+**Empregada Doméstica – Vários Empregos (35 anos)**
+
+* Preparação de refeições diárias para famílias
+* Organização da cozinha e controle de utensílios
+* Experiência com diversos tipos de cardápios, desde refeições simples até pratos mais elaborados para eventos familiares
+* Manutenção da limpeza e organização do ambiente de trabalho
+
+---
+
+### **Habilidades**
+
+* Boa experiência com cozinhas e preparo de alimentos
+* Atenção à limpeza e organização
+* Boa disposição para aprender novas tarefas
+* Tradição em cuidar de refeições simples e saborosas
+
+---
+
+### **Disponibilidade**
+
+Total disponibilidade para todos os turnos.
+```
+
+Currículo 4
+
+```
+Claro, aqui está um currículo enxuto para uma pessoa de baixa renda, desempregada há algum tempo, sem experiência em cozinha, mas com experiência anterior em escritório, buscando uma oportunidade como cozinheiro:
+
+---
+
+### **CURRÍCULO — Carlos Pereira da Silva**
+
+**Telefone:** (11) 99999-9999
+**E-mail:** [carlos.silva@email.com](mailto:carlos.silva@email.com)
+**Endereço:** São Paulo – SP
+
+---
+
+### **Objetivo**
+
+Cozinheiro – Restaurante Fast-Food
+
+---
+
+### **Resumo Pessoal**
+
+Estou há algum tempo desempregado e em busca de uma nova oportunidade de trabalho. Embora eu não tenha experiência direta em cozinha, tenho boa vontade para aprender e sou muito dedicado. Trabalhei por alguns anos em um escritório, o que me ensinou a ser organizado, responsável e a trabalhar sob pressão. Busco uma vaga para complementar minha renda e aprender novas habilidades. Estou disponível para começar imediatamente e disposto a aprender o que for necessário.
+
+---
+
+### **Experiência Profissional**
+
+**Auxiliar Administrativo – Empresa XYZ**
+*2018 – 2020*
+
+* Organização de documentos e arquivos
+* Atendimento telefônico e suporte a clientes
+* Controle de agenda e agendamento de compromissos
+* Apoio à equipe administrativa
+
+---
+
+### **Habilidades**
+
+* Organizado e pontual
+* Facilidade para aprender novas tarefas
+* Boa comunicação e trabalho em equipe
+* Disposição para desafios e ambientes dinâmicos
+
+---
+
+### **Disponibilidade**
+
+Total disponibilidade para todos os turnos.
+```
+
+Currículo 5
+
+```
+### **CURRÍCULO — Lucas Oliveira Santos**
+
+**Telefone:** (11) 99999-9999
+**E-mail:** [lucas.santos@email.com](mailto:lucas.santos@email.com)
+**Endereço:** São Paulo – SP
+
+---
+
+### **Objetivo**
+
+Cozinheiro – Restaurante Fast-Food
+
+---
+
+### **Resumo Pessoal**
+
+Acabei de concluir o ensino médio e estou em busca da minha primeira oportunidade de trabalho. Apesar de não ter experiência em cozinha, tenho muita disposição para aprender e estou aberto a novos desafios. Sempre fui responsável e organizado nas minhas atividades escolares e estou pronto para aplicar essas qualidades em um ambiente de trabalho. Quero aprender tudo sobre a área de alimentação e colaborar de forma eficiente com a equipe.
+
+---
+
+### **Formação Acadêmica**
+
+**Ensino Médio Completo** – Colégio ABC
+*Conclusão em 2024*
+
+---
+
+### **Experiência Profissional**
+
+Nenhuma experiência profissional até o momento.
+
+---
+
+### **Habilidades**
+
+* Disposição para aprender rapidamente
+* Boa comunicação e trabalho em equipe
+* Organizado e responsável
+* Facilidade para lidar com tarefas repetitivas e ritmo acelerado
+
+---
+
+### **Disponibilidade**
+
+Imediata, com disponibilidade para todos os turnos.
+```
