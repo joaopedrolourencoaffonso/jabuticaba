@@ -1,7 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 import json
 from jabuticaba_functions import *
-from os import environ
+from os import environ, listdir
 import requests
 import json
 
@@ -16,6 +16,20 @@ def index():
 @app.route('/PaginaDeUpload', methods=['GET'])
 def PaginaDeUpload():
     return render_template('PaginaDeUpload.html');
+
+@app.route('/listar_arquivos', methods=['POST'])
+def listar_arquivos():
+    path = request.form.get('path', '');
+
+    print("path: ",path);
+    diretorio = listdir(path);
+
+    for arquivo in diretorio:
+        #print("arquivo: ",arquivo[-4:]);
+        if arquivo[-4:] != '.pdf':
+            diretorio.remove(arquivo);
+    
+    return diretorio, 200;
 
 @app.route('/formularioSimples')
 def formularioSimples():

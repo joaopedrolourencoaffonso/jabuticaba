@@ -12,8 +12,88 @@
 <body>
     <h1>Jabuticaba currículos</h1>
 
+    <input type="text" id="path" name="path" placeholder="C:\seus\arquivos\aqui"><br><br>
+    <button onclick="pegarArquivos()">Selecionar diretório</button>
+
+    <div id="arquivos">
+        Aqui aparecerão os arquivos        
+    </div>
+
     <script>
-        
+        function pegarArquivos() {
+            let path = document.getElementById("path");
+            path = path.value.replaceAll("\\", "\\\\");
+
+            console.log(path);
+            sendPath(path);
+        }
+
+        async function sendPath(path) {
+            console.log("Enviando curriculo para análise...");
+            const url = 'http://127.0.0.1:5000/listar_arquivos';  // Replace with your server endpoint
+            
+            // Send a POST request with the curriculo string
+            try {
+                const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded', // You can also use 'application/json' if needed
+                },
+                body: `path=${encodeURIComponent(path)}`, // Encode the curriculo data for safe transmission
+                });
+
+                if (response.ok) {
+                    console.log('Data sent successfully');
+                    const data = await response.text(); // Get the response body tex
+                    console.log("Response data:", data);
+                    listaArquivos(data);
+                } else {
+                    console.error('Error:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Request failed', error);
+            }
+        }
+
+        function listaArquivos(arquivos){
+            // Get the container div
+            let container = document.getElementById("arquivos");
+            container.innerHTML = '';
+
+            const br1 = document.createElement("br");
+            const br2 = document.createElement("br");
+            container.appendChild(br1);
+            container.appendChild(br2);
+
+            let lista;
+            let liElement;
+
+            lista = arquivos.replaceAll("[", "").replaceAll("]", "").replaceAll("'", "");
+            lista = lista.replaceAll("\n", "");
+            lista = lista.replaceAll('  "', "").replaceAll('"','').split(",");
+            //
+            //console.log("arquivos: ", temp, typeof(temp));
+            //
+
+            for (let i = 0; i < lista.length; i++) {
+                const arquivo = lista[i];
+
+                const liElement = document.createElement("li");
+                liElement.id = `arquivo-${i}`;  // Unique ID for each li
+                liElement.textContent = arquivo + " "; // Add some spacing before the button
+
+                const deleteButton = document.createElement("button");
+                deleteButton.textContent = "Delete";
+
+                // Add click event to delete this li
+                deleteButton.addEventListener("click", () => {
+                    liElement.remove();
+                });
+
+                liElement.appendChild(deleteButton);
+                container.appendChild(liElement);
+            }
+        }
     </script>
 </body>
 </html>
