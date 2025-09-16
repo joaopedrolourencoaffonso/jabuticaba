@@ -100,6 +100,10 @@
         }
 
         async function enviarParaAnalise() {
+            //
+            let path = document.getElementById("path");
+            path = path.value.replaceAll("\\", "\\\\");
+            // 
             const container = document.getElementById("arquivos");
             
             if (!container) {
@@ -114,7 +118,7 @@
             for (let i = 0; i < children.length; i++) {
                 if (children[i].firstChild != null){
                     //console.log("-> ",children[i].firstChild.data);
-                    arquivosParaEnvio.push(children[i].firstChild.data);
+                    arquivosParaEnvio.push(path + "\\\\" + children[i].firstChild.data);
                 }
             }
             console.log("Enviando para análise: ", arquivosParaEnvio);

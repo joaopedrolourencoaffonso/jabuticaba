@@ -4,6 +4,7 @@ from jabuticaba_functions import *
 from os import environ, listdir
 import requests
 import json
+from PyPDF2 import PdfReader
 
 app = Flask(__name__)
 
@@ -35,11 +36,24 @@ def listar_arquivos():
 def enviarAnalise():
     arquivos = request.get_json('arquivos');
     arquivos = arquivos.get('arquivos', []);
-    
+    string_arquivo = "Currículo 1\n";
+
     for arquivo in arquivos:
+        print("----------------------------------------------------------------");
         print("arquivo: ",arquivo);
-    
-    
+        print("----------------------------------------------------------------");
+        reader = PdfReader(arquivo)
+        number_of_pages = len(reader.pages)
+
+        for i in range(0,number_of_pages):
+            page = reader.pages[0]
+            text = page.extract_text();
+            text = text.replace('\n', ' ').replace('\r', ' ');
+            temp = i + 2;
+            string_arquivo = string_arquivo + "\n-----\n Currículo " + str(temp) + "\n-----\n" + text;
+
+    print("---------\nstring_arquivo\n---------\n",string_arquivo);
+
     return jsonify(['ok']), 200, {'Content-Type': 'application/json; charset=utf-8'};
 
 @app.route('/formularioSimples')
