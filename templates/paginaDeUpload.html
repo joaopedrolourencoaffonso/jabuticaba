@@ -14,10 +14,12 @@
 
     <input type="text" id="path" name="path" placeholder="C:\seus\arquivos\aqui"><br><br>
     <button onclick="pegarArquivos()">Selecionar diretório</button>
-
+    <br><br>
     <div id="arquivos">
         Aqui aparecerão os arquivos        
     </div>
+    <br><br>
+    <button onclick="enviarParaAnalise()">Selecionar diretório</button>
 
     <script>
         function pegarArquivos() {
@@ -96,6 +98,48 @@
                 container.appendChild(liElement);
             }
         }
+
+        async function enviarParaAnalise() {
+            const container = document.getElementById("arquivos");
+            
+            if (!container) {
+                console.log("No element with ID 'arquivos' found.");
+                return;
+            }
+
+            const children = container.children;
+
+            //console.log(`Found ${children.length} elements inside #arquivos:`);
+            let arquivosParaEnvio = [];
+            for (let i = 0; i < children.length; i++) {
+                if (children[i].firstChild != null){
+                    //console.log("-> ",children[i].firstChild.data);
+                    arquivosParaEnvio.push(children[i].firstChild.data);
+                }
+            }
+            console.log("Enviando para análise: ", arquivosParaEnvio);
+            const url = 'http://127.0.0.1:5000/enviarAnalise';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ arquivos: arquivosParaEnvio }),  // Wrap in object if needed
+                });
+
+                if (response.ok) {
+                    const data = await response.json(); // or .text() depending on response
+                    console.log("Response from server:", data[0]);
+                } else {
+                    console.error("Server responded with error:", response.statusText);
+                }
+            } catch (error) {
+                console.error("Error sending request:", error);
+            }
+        }
+
     </script>
 </body>
 </html>

@@ -31,6 +31,17 @@ def listar_arquivos():
     print("diretorio: ",diretorio);
     return jsonify(diretorio), 200, {'Content-Type': 'application/json; charset=utf-8'};
 
+@app.route('/enviarAnalise', methods=['POST'])
+def enviarAnalise():
+    arquivos = request.get_json('arquivos');
+    arquivos = arquivos.get('arquivos', []);
+    
+    for arquivo in arquivos:
+        print("arquivo: ",arquivo);
+    
+    
+    return jsonify(['ok']), 200, {'Content-Type': 'application/json; charset=utf-8'};
+
 @app.route('/formularioSimples')
 def formularioSimples():
     return render_template('formularioSimples.html');
