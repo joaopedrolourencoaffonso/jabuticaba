@@ -12,14 +12,32 @@
 <body>
     <h1>Jabuticaba currículos</h1>
 
+    <div id="DivDaVaga">
+        <h2>Descrição da vaga:</h2>
+        <textarea id="vaga" name="vaga" rows="4" cols="180" placeholder="Descreva a vaga aqui..."></textarea>
+        <br><br><br>
+        <hr>
+    </div>
+
+    <h3>Caminho dos Arquivos</h3>
     <input type="text" id="path" name="path" placeholder="C:\seus\arquivos\aqui"><br><br>
     <button onclick="pegarArquivos()">Selecionar diretório</button>
+    
     <br><br>
+    
     <div id="arquivos">
         Aqui aparecerão os arquivos        
     </div>
+    
     <br><br>
-    <button onclick="enviarParaAnalise()">Selecionar diretório</button>
+    
+    <button onclick="enviarParaAnalise()">Enviar para Análise</button>
+    
+    <br><br>
+    <hr>
+    <div id="respostaPrompt">
+        A resposta do prompt aparecerá aqui
+    </div>
 
     <script>
         function pegarArquivos() {
@@ -103,6 +121,8 @@
             //
             let path = document.getElementById("path");
             path = path.value.replaceAll("\\", "\\\\");
+            //
+            let descricaoVaga = document.getElementById("vaga").value;
             // 
             const container = document.getElementById("arquivos");
             
@@ -130,12 +150,14 @@
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify({ arquivos: arquivosParaEnvio }),  // Wrap in object if needed
+                    body: JSON.stringify({ arquivos: arquivosParaEnvio,vaga: descricaoVaga }),  // Wrap in object if needed
                 });
 
                 if (response.ok) {
                     const data = await response.json(); // or .text() depending on response
                     console.log("Response from server:", data[0]);
+                    console.log("Descrição da vaga: ",descricaoVaga);
+                    document.getElementById("respostaPrompt").innerText = data[0];
                 } else {
                     console.error("Server responded with error:", response.statusText);
                 }

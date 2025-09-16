@@ -35,8 +35,10 @@ def listar_arquivos():
 @app.route('/enviarAnalise', methods=['POST'])
 def enviarAnalise():
     arquivos = request.get_json('arquivos');
+    vaga = arquivos.get('vaga', []);
     arquivos = arquivos.get('arquivos', []);
-    string_arquivo = "Currículo 1\n";
+    print("vaga: ",vaga);
+    string_arquivo = vaga + "\n-------\nCurrículo 1\n";
 
     for arquivo in arquivos:
         print("----------------------------------------------------------------");
@@ -52,9 +54,11 @@ def enviarAnalise():
             temp = i + 2;
             string_arquivo = string_arquivo + "\n-----\n Currículo " + str(temp) + "\n-----\n" + text;
 
-    print("---------\nstring_arquivo\n---------\n",string_arquivo);
+    print("Enviando para análise");
 
-    return jsonify(['ok']), 200, {'Content-Type': 'application/json; charset=utf-8'};
+    result = send_openai_request(environ['OPENAI_API_KEY'], string_arquivo, requests)
+
+    return result['output'][0]['content'][0]['text'], 200, {'Content-Type': 'application/json; charset=utf-8'};
 
 @app.route('/formularioSimples')
 def formularioSimples():
