@@ -28,8 +28,8 @@ def listar_arquivos():
         #print("arquivo: ",arquivo[-4:]);
         if arquivo[-4:] != '.pdf':
             diretorio.remove(arquivo);
-    
-    return diretorio, 200;
+    print("diretorio: ",diretorio);
+    return jsonify(diretorio), 200, {'Content-Type': 'application/json; charset=utf-8'};
 
 @app.route('/formularioSimples')
 def formularioSimples():

@@ -44,8 +44,8 @@
 
                 if (response.ok) {
                     console.log('Data sent successfully');
-                    const data = await response.text(); // Get the response body tex
-                    console.log("Response data:", data);
+                    const data = await response.json(); // Get the response body tex
+                    console.log("Response data:", typeof(data), data);
                     listaArquivos(data);
                 } else {
                     console.error('Error:', response.statusText);
@@ -56,6 +56,8 @@
         }
 
         function listaArquivos(arquivos){
+            console.log("listaArquivos: ", arquivos, typeof(arquivos));
+            //arquivos = decodeURIComponent(escape(arquivos)); 
             // Get the container div
             let container = document.getElementById("arquivos");
             container.innerHTML = '';
@@ -68,15 +70,15 @@
             let lista;
             let liElement;
 
-            lista = arquivos.replaceAll("[", "").replaceAll("]", "").replaceAll("'", "");
-            lista = lista.replaceAll("\n", "");
-            lista = lista.replaceAll('  "', "").replaceAll('"','').split(",");
+            //lista = arquivos.replaceAll("[", "").replaceAll("]", "").replaceAll("'", "");
+            //lista = lista.replaceAll("\n", "");
+            //lista = lista.replaceAll('  "', "").replaceAll('"','').split(",");
             //
             //console.log("arquivos: ", temp, typeof(temp));
             //
 
-            for (let i = 0; i < lista.length; i++) {
-                const arquivo = lista[i];
+            for (let i = 0; i < arquivos.length; i++) {
+                const arquivo = arquivos[i];
 
                 const liElement = document.createElement("li");
                 liElement.id = `arquivo-${i}`;  // Unique ID for each li
